@@ -1,7 +1,4 @@
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
+using Braintree;
 using LibraryApp.Data;
 using LibraryApp.Data.Models;
 using LibraryApp.Data.Services;
@@ -12,6 +9,10 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Threading.Tasks;
 
 namespace LibraryApp
 {
@@ -28,6 +29,7 @@ namespace LibraryApp
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddTransient<IBookService, BookService>();
+            services.AddTransient<IBraintreeService, Data.Services.BraintreeService>();
             services.AddDbContext<AppDbContext>(opt => opt.UseInMemoryDatabase(new Guid().ToString()));
             services.AddControllersWithViews();
         }
