@@ -11,10 +11,12 @@ namespace LibraryApp.Controllers
     public class CheckoutController : Controller
     {
         private readonly IBookService _courseService;
+        private readonly IBraintreeService _braintreeService;
 
-        public CheckoutController(IBookService courseService)
+        public CheckoutController(IBookService courseService, IBraintreeService braintreeService)
         {
             _courseService = courseService;
+            _braintreeService = braintreeService;
         }
 
         public IActionResult Purchase(Guid id)
@@ -22,6 +24,10 @@ namespace LibraryApp.Controllers
 
             var book = _courseService.GetById(id);
             if (book == null) return NotFound();
+
+            var gateway = _braintreeService.GetGateway();
+            var clientToken = gateway.ClientToken.Generate();
+            ViewBag.ClientToken = clientToken;
 
             var data = new BookPurchaseVM
             {
