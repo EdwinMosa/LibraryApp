@@ -22,6 +22,7 @@
                     <div id="bt-dropin"></div>
                 </div>
             </section>
+            @Html.HiddenFor(n => n.Nonce, new { @id = "nonce" }) 
             <hr />
             <button class="btn btn-success" type="submit"><span>Confirm payment - $@Model.Price</span></button>
         </form>
@@ -30,7 +31,7 @@
 
 <script src="https://js.braintreegateway.com/web/dropin/1.22.0/js/dropin.min.js"></script>
 <script>
-    //var form = document.querySelector('#payment-form');
+    var form = document.querySelector('#payment-form');
     var client_token = "@ViewBag.ClientToken";
     braintree.dropin.create({
         authorization: client_token,

@@ -77,7 +77,7 @@ namespace LibraryApp
                     Description="We live in an age of unprecedented opportunity: with ambition, drive, and talent, you can rise to the top of your chosen profession, regardless of where you started out...",
                     Author= "Peter Ducker",
                     Thumbnail = "https://devyscope.com/linkedin-learning/payment-gateways/book-covers/managing-oneself.png",
-                    Price = "19.90"
+                    Price = "19,90"
                 },
                 new Book()
                 {
@@ -86,7 +86,7 @@ namespace LibraryApp
                     Description="Evolutionary Psychology: The New Science of the Mind, 5th edition provides students with the conceptual tools of evolutionary psychology, and applies them to empirical research...",
                     Author= "David Buss",
                     Thumbnail = "https://devyscope.com/linkedin-learning/payment-gateways/book-covers/evoluationary-psychology.png",
-                    Price = "29.90"
+                    Price = "29,90"
                 },
                 new Book()
                 {
