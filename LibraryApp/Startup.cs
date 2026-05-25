@@ -76,7 +76,7 @@ namespace LibraryApp
                     Title="Managing Oneself",
                     Description="We live in an age of unprecedented opportunity: with ambition, drive, and talent, you can rise to the top of your chosen profession, regardless of where you started out...",
                     Author= "Peter Ducker",
-                    Thumbnail = "https://devyscope.com/linkedin-learning/payment-gateways/book-covers/managing-oneself.png",
+                    Thumbnail = "/images/managing-oneself.png",
                     Price = "19,90"
                 },
                 new Book()
@@ -85,7 +85,7 @@ namespace LibraryApp
                     Title="Evolutionary Psychology",
                     Description="Evolutionary Psychology: The New Science of the Mind, 5th edition provides students with the conceptual tools of evolutionary psychology, and applies them to empirical research...",
                     Author= "David Buss",
-                    Thumbnail = "https://devyscope.com/linkedin-learning/payment-gateways/book-covers/evoluationary-psychology.png",
+                    Thumbnail = "/images/evoluationary-psychology.png",
                     Price = "29,90"
                 },
                 new Book()
@@ -94,8 +94,8 @@ namespace LibraryApp
                     Title="How to Win Friends & Influence People",
                     Description="Millions of people around the world have improved their lives based on the teachings of Dale Carnegie. In How to Win Friends and Influence People, he offers practical advice...",
                     Author= "Dale Carnegie",
-                    Thumbnail = "https://devyscope.com/linkedin-learning/payment-gateways/book-covers/win-friends-influence-people.png",
-                    Price = "32.49"
+                    Thumbnail = "/images/win-friends-influence-people.png",
+                    Price = "32,49"
                 },
                 new Book()
                 {
@@ -103,8 +103,8 @@ namespace LibraryApp
                     Title = "The Selfish Gene",
                     Description = "Professor Dawkins articulates a gene’s eye view of evolution. A view giving center stage to these persistent units of information, and in which organisms can be seen as...",
                     Author = "Richard Dawkins",
-                    Thumbnail = "https://devyscope.com/linkedin-learning/payment-gateways/book-covers/the-selfish-gene.png",
-                    Price = "17.89"
+                    Thumbnail = "/images/the-selfish-gene.png",
+                    Price = "17,89"
                 },
                 new Book()
                 {
@@ -112,8 +112,8 @@ namespace LibraryApp
                     Title = "The Lessons of History",
                     Description = "Will and Ariel Durant have succeeded in distilling for the reader the accumulated store of knowledge and experience from their five decades of work on the eleven monumental...",
                     Author = "Will & Ariel Durant",
-                    Thumbnail = "https://devyscope.com/linkedin-learning/payment-gateways/book-covers/the-lessons-of-history.png",
-                    Price = "32.00"
+                    Thumbnail = "/images/the-lessons-of-history.png",
+                    Price = "32,00"
                 }
             };
 
